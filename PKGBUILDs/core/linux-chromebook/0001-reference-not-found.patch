@@ -1,0 +1,25 @@
+From 20c08df4fb94f0899b1dbcbbc28ddf169b2755c6 Mon Sep 17 00:00:00 2001
+From: Daniel Tralamazza <daniel@tralamazza.com>
+Date: Thu, 27 Mar 2014 19:47:54 +0100
+Subject: [PATCH] reference not found
+
+---
+ .../t6xx/kbase/src/platform/chromebook/mali_kbase_config_chromebook.c   | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/gpu/arm/t6xx/kbase/src/platform/chromebook/mali_kbase_config_chromebook.c b/drivers/gpu/arm/t6xx/kbase/src/platform/chromebook/mali_kbase_config_chromebook.c
+index ef9e06a..bd53895 100644
+--- a/drivers/gpu/arm/t6xx/kbase/src/platform/chromebook/mali_kbase_config_chromebook.c
++++ b/drivers/gpu/arm/t6xx/kbase/src/platform/chromebook/mali_kbase_config_chromebook.c
+@@ -1355,7 +1355,7 @@ static ssize_t mali_sysfs_show_asv(struct device *dev,
+ 	if (!buf)
+ 		return -EINVAL;
+ 
+-	asv_group = exynos_asv_group_get(ID_G3D);
++	asv_group = 0;//exynos_asv_group_get(ID_G3D);
+ 	if (soc_is_exynos5250()) {
+ 		ret += scnprintf(buf, PAGE_SIZE, "asv group:%d exynos_lot_id:%d\n",
+ 				asv_group, exynos_lot_id);
+-- 
+1.9.1
+
