@@ -16,14 +16,14 @@ url="https://chromium.googlesource.com/chromiumos/third_party/kernel-next/+/rele
 license=('GPL2')
 makedepends=('xmlto' 'docbook-xsl' 'uboot-mkimage' 'dtc' 'inetutils' 'kmod')
 options=('!strip')
-_commit=214e110a259d6db63b106014ac5773b216363500
+_commit=0ded3092797b3872507e0fc16cda3335d3ddcbcb
 source=("https://chromium.googlesource.com/chromiumos/third_party/kernel-next/+archive/${_commit}.tar.gz"
 	'config'
 	'kernel.its'
 	'0001-reference-not-found.patch')
 noextract=("${_commit}.tar.gz")
-md5sums=('62391b6b0827af7e77107788cc0b8086'
-	 '0a72b86138de6055bd5370161ed52c4c'
+md5sums=('01904accf068b5df5c3661c1451abeb3'
+	 '3273cba85b0e15c0dcba871c89e790f7'
 	 '2d4ae6b8e9881ada57fef36346e51054'
 	 '85a707f223386e201f904e88f2b0a386')
 
